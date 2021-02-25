@@ -1,0 +1,67 @@
+
+.barnav{
+    height: 65px;
+    width: auto;
+    background-color: #2990e6 ;   
+}
+
+.ulIzq{
+    float:left;
+    list-style: none;
+    padding-left: 100px;
+    margin: 0px;
+}
+
+.ulIzq li{
+    display: inline;
+    text-align: center;
+}
+ 
+.ulDer{
+    float: right;
+    list-style: none;
+    padding-right: 100px;
+
+}
+
+.ulDer li{
+    display: inline;
+}
+
+.ulDer li a:hover{
+    background-color: #3c9ae8;
+    text-decoration: underline;
+}
+
+.imgNav{
+    float: left;
+    margin: 10px;
+    width: 43px;
+    height: 43px;
+    border-radius: 50%;
+}
+
+.liTitulo{
+    padding-left: 500px;
+    padding-left: 13px;
+    padding-top: 1px;
+    font-size: 30px;
+    color: white;
+}
+
+.liTitulo a spam{
+    
+}
+
+.ulDer li a{
+    color: whitesmoke;
+    font-size: 18px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 20px;
+    float: right;
+}
+
+
+/*Movile Menu*/
+
