@@ -1,87 +1,60 @@
 
 .barnav{
     width: auto;
-    height: 500px;
+    height: auto;
     /*background-color: #2990e6 ;   */
     background-color: lightgray;
-    
     text-align: center;
 }
 
-.ulLogo{
-    align-items: center;
-    list-style: none;
-    display: inline;
-}
-
-.ulNav{
-    
-    list-style: none;
-    
-}
-
 .divLogo{
+    text-align: center ;
+}
+
+.logImg{
+    width: 135px;
+    height: 135px;
+    border-radius: 50%;
+}
+
+.liTitulo a h1{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 50px;
+    text-align: center;
+}
+
+.imgNav{
+    height: 135px;
 
 }
 
 .divNav{
-    display: inline;
-    border-top: slategrey;
-    border-bottom: slategrey;
+    background-color: #2990e6;
 }
 
-
-.ulIzq{
-    float:left;
+.ulNav{
+    margin-top: 10px;
+    margin-bottom: 10px;
     list-style: none;
-    padding-left: 100px;
-    margin: 0px;
 }
 
-.ulIzq li{
+.ulNav li{
     display: inline;
-    text-align: center;
-}
- 
-.ulDer{
-    float: right;
-    list-style: none;
-    padding-right: 100px;
-
+    margin-inline: 15px;
 }
 
-.ulDer li{
-    display: inline;
+.ulNav{
+    
 }
-
-.ulDer li a:hover{
-    background-color: #3c9ae8;
+.ulNav li a{
+    color: lavender;
     text-decoration: underline;
 }
 
-.imgNav{
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
+.ulNav li:hover{
+    background-color: #000;
 }
 
-.liTitulo{
-    font-size: 30px;
-    color: white;
-}
-
-.liTitulo a spam{
-    
-}
-
-.ulDer li a{
-    color: whitesmoke;
-    font-size: 18px;
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-bottom: 20px;
-    float: right;
-}
 
 
 /*Movile Menu*/
