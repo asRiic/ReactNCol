@@ -30,7 +30,7 @@ export default class Navbar2 extends Component {
                                     <spam>Entrevista</spam>
                                 </Link>
                             </li>
-                            
+
                             <li>
                                 <Link>
                                     <spam>Emisora</spam>

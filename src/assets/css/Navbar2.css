@@ -5,6 +5,7 @@
     /*background-color: #2990e6 ;   */
     background-color: lightgray;
     text-align: center;
+    text-decoration: none;
 }
 
 .divLogo{
@@ -30,29 +31,33 @@
 
 .divNav{
     background-color: #2990e6;
+    height: 50px;
 }
 
 .ulNav{
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 0px;
+    margin-top: 0px;
     list-style: none;
+    font-size: 26px;
 }
 
 .ulNav li{
     display: inline;
-    margin-inline: 15px;
+    padding-inline: 15px;
+    padding-bottom: 15px;
+    padding-top: 2px;
+
 }
 
-.ulNav{
-    
-}
 .ulNav li a{
     color: lavender;
-    text-decoration: underline;
+    font-size: 20px;
+    
 }
 
 .ulNav li:hover{
-    background-color: #000;
+    background-color: #217FCD;
+    text-decoration: underline;
 }
 
 
