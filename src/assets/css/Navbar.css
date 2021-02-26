@@ -1,66 +1,65 @@
 
 .barnav{
-    height: 65px;
     width: auto;
-    background-color: #2990e6 ;   
-}
-
-.ulIzq{
-    float:left;
-    list-style: none;
-    padding-left: 100px;
-    margin: 0px;
-}
-
-.ulIzq li{
-    display: inline;
+    height: auto;
+    /*background-color: #2990e6 ;   */
+    background-color: lightgray;
     text-align: center;
-}
- 
-.ulDer{
-    float: right;
-    list-style: none;
-    padding-right: 100px;
-
+    text-decoration: none;
 }
 
-.ulDer li{
-    display: inline;
+.divLogo{
+    text-align: center ;
 }
 
-.ulDer li a:hover{
-    background-color: #3c9ae8;
-    text-decoration: underline;
-}
-
-.imgNav{
-    float: left;
-    margin: 10px;
-    width: 43px;
-    height: 43px;
+.logImg{
+    width: 135px;
+    height: 135px;
     border-radius: 50%;
 }
 
-.liTitulo{
-    padding-left: 500px;
-    padding-left: 13px;
-    padding-top: 1px;
-    font-size: 30px;
-    color: white;
+.liTitulo a h1{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 50px;
+    text-align: center;
 }
 
-.liTitulo a spam{
+.imgNav{
+    height: 135px;
+
+}
+
+.divNav{
+    background-color: #2990e6;
+    height: 50px;
+}
+
+.ulNav{
+    margin-bottom: 0px;
+    margin-top: 0px;
+    list-style: none;
+    font-size: 26px;
+}
+
+.ulNav li{
+    display: inline;
+    padding-inline: 15px;
+    padding-bottom: 15px;
+    padding-top: 2px;
+
+}
+
+.ulNav li a{
+    color: lavender;
+    font-size: 20px;
     
 }
 
-.ulDer li a{
-    color: whitesmoke;
-    font-size: 18px;
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-bottom: 20px;
-    float: right;
+.ulNav li:hover{
+    background-color: #217FCD;
+    text-decoration: underline;
 }
+
 
 
 /*Movile Menu*/

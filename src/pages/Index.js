@@ -3,7 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import '../assets/css/Index.css';
 
 /* Componentes */
-import Navbar from '../components/Navbar2';
+import Navbar from '../components/Navbar';
 import NewsBar from '../components/NewsBar';
 import Carousel from '../components/Carousel';
 
