@@ -1,0 +1,44 @@
+.cardStyle{
+    height: 146px;
+    margin-top: 5px;
+    margin-left: 4px;
+    margin-right: 4px;
+    margin-bottom: 1px;
+    background-color: lightcyan;
+    
+}
+
+.contCard{
+    width: 518px;
+    height: 145px;
+    margin: 0px;
+}
+
+.contImg{
+    height: 145px;
+    width: 190px;
+    padding: 0px;
+}
+
+.cardImg{
+    height: 146px;
+    width: 190px;
+}
+
+.contBody{
+    padding: 0px;
+    height: 146px;
+    width: 328px;
+    padding: 3px 5px 3px 5px;
+}
+
+.bodCard{
+    height: 114px;
+    width: 318px;
+}
+
+.cardTitle{
+    margin-bottom: 5px;
+    height: 110px;
+}
+

@@ -9,3 +9,20 @@
 .colNews{
     background-color: red;
 }
+
+.colCarousel{
+    background-color: lemonchiffon;
+}
+
+.ContCarousel{
+    background-color: rgb(113, 63, 136); /*Esto toca quitarlo*/
+    padding: 0px;
+    height: 460px;
+}
+
+.CardCarousel{
+    background-color: lightcoral;
+    padding: 0px;
+    height: 460px;
+    width: 720px;
+}
