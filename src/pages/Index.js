@@ -33,7 +33,10 @@ function Dashboard() {
             </div>
 
             <div className="row">
-              <div className="col col-lg-2" >
+              <div className="col col-lg-12" >
+                <div className="colTittle">
+                  <h1>Cronicas</h1>
+                </div>
                 <NewsBar />
               </div>
             </div>

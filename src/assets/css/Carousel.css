@@ -10,3 +10,9 @@
     padding-left: 8px;
 }
 
+.infCarousel{
+    width: 720px;
+    left: 0px;
+    right: 0px;
+    background: #6c757dad;
+}

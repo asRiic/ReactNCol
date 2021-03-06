@@ -9,27 +9,32 @@ import {
     CarouselCaption
 } from 'reactstrap';
 
-import paisaje1 from '../assets/img/paisaje 2.jpg';
+import paisaje1 from '../assets/img/paisaje 1.jpg';
+import paisaje2 from '../assets/img/paisaje 2.jpg';
+import paisaje3 from '../assets/img/paisaje 3.jpg';
 
 //Quitar este Objeto y poner una api :v
 const items = [
     {
         id: '1',
-        src: require('../assets/img/paisaje 1.jpg'),
+        src: paisaje1,
         altText: 'Titulo 1',
-        caption: 'Esta es una descripcion 1'
+        caption: 'Esta es una descripcion 1',
+        typeNews:'Cronica'
     },
     {
         id: '2',
-        src: require('../assets/img/paisaje 2.jpg'),
+        src: paisaje2,
         altText: 'Titulo 2',
-        caption: 'Esta es una descripcion 2'
+        caption: 'Esta es una descripcion 2',
+        typeNews:''
     },
     {
         id: '3',
-        src: require('../assets/img/paisaje 3.jpg'),
+        src: paisaje3,
         altText: 'Titulo 3',
-        caption: 'Esta es una descripcion 3'
+        caption: 'Esta es una descripcion 3',
+        typeNews:''
     }
 ];
 
@@ -61,26 +66,26 @@ const CarouselImg = (props) => {
                 onExited={() => setAnimating(false)}
                 key={item.id}
             >
-                <img src={paisaje1} alt={item.altText} className="ImgCarousel" />
-                <CarouselCaption captionText={item.caption} captionHeader={item.caption} />
+                <img src={item.src} alt={item.altText} className="ImgCarousel" />
+                <CarouselCaption className="infCarousel" captionText={item.caption} captionHeader={item.caption} />
             </CarouselItem>
         );
     });
 
     return (
-        
-            <Carousel
-                activeIndex={activeIndex}
-                next={next}
-                previous={previous}
-                className="Carousel"
-            >
-                <CarouselIndicators items={items} activeIndex={activeIndex} onClickHandler={goToIndex} />
-                {slides}
-                <CarouselControl direction="prev" directionText="Anterior" onClickHandler={previous} />
-                <CarouselControl direction="next" directionText="Siguiente" onClickHandler={next} />
-            </Carousel>
-    
+
+        <Carousel
+            activeIndex={activeIndex}
+            next={next}
+            previous={previous}
+            className="Carousel"
+        >
+            <CarouselIndicators items={items} activeIndex={activeIndex} onClickHandler={goToIndex} />
+            {slides}
+            <CarouselControl direction="prev" directionText="Anterior" onClickHandler={previous} />
+            <CarouselControl direction="next" directionText="Siguiente" onClickHandler={next} />
+        </Carousel>
+
     );
 }
 
