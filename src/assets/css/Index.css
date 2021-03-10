@@ -3,7 +3,7 @@
 }
 
 .colCont{
-    background-color: royalblue;
+    background-color: #444;
 }
 
 .colNews{
@@ -27,9 +27,21 @@
     width: 720px;
 }
 
-.colTittle{
+.colHeader{
     border-top-style: solid ;
-    border-width: 2px;
-    border-top-width: 2px;
+    border-width: 1.5px;
+    border-top-width: 1.5px;
     margin-top: 10px;
+    width: auto;
+    height: 50px;
+}
+
+.moreNews a p{
+    margin-bottom: 0px;
+    margin-top: 16px;
+}
+
+.colCardNews{
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
