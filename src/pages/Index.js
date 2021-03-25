@@ -73,7 +73,8 @@ function Dashboard() {
               <div className="col-lg-12 colHeader">
                 <div className="row" >
                   <div className="colTittle col-lg-9">
-                    <h1>Entrevistas</h1>
+                    <h1>Emisora</h1>
+                    <small>Escucha las entrevisatas mas interesante (Esto toca arreglarlo)</small> 
                   </div>
                   <div className="moreNews col-lg-3">
                     <Link to="/">

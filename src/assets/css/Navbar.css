@@ -1,21 +1,29 @@
 
 .barnav{
-    width: auto;
+    width: 1864px;
     height: auto;
-    /*background-color: #2990e6 ;   */
     background-color: #F0F0F0;
     text-align: center;
     text-decoration: none;
 }
 
+.divLogo div{
+    padding: 0px;
+}
+
 .divLogo{
     text-align: center ;
+    width: auto;
 }
 
 .logImg{
     width: 135px;
     height: 135px;
     border-radius: 50%;
+}
+
+.liTitulo{
+    padding: 0px;
 }
 
 .liTitulo a h1{
@@ -26,11 +34,17 @@
 
 .imgNav{
     height: 135px;
+    width: auto;
+    padding: 0px;
+}
 
+.rowNav{
+    width: auto;   
 }
 
 .divNav{
-    background-color: #2990e6;
+    /*background-color: #2990e6;*/
+    background-color: #47545e;
     height: 50px;
 }
 

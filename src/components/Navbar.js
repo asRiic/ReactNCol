@@ -22,7 +22,7 @@ export default class Navbar extends Component {
                     </div>
                 </div>
 
-                <div className="row ">
+                <div className="row rowNav">
                     <div className="col divNav">
                         <ul className="ulNav">
                             <li>
@@ -49,6 +49,11 @@ export default class Navbar extends Component {
                             <li>
                                 <Link>
                                     <spam>Cronicas</spam>
+                                </Link>
+                            </li>
+                            <li>
+                                <Link>
+                                    <spam>¿Quienes somos?</spam>
                                 </Link>
                             </li>
                         </ul>

@@ -9,13 +9,13 @@
 }
 
 .contCard{
-    width: 518px;
-    height: 145px;
+    width: 498px;
+    height: 146px;
     margin: 0px;
 }
 
 .contImg{
-    height: 145px;
+    height: 146px;
     width: 190px;
     padding: 0px;
 }
@@ -28,13 +28,17 @@
 .contBody{
     padding: 0px;
     height: 146px;
-    width: 328px;
+    width: 308px;
     padding: 3px 5px 3px 5px;
 }
 
 .bodCard{
     height: 114px;
-    width: 318px;
+    width: 298px;
+}
+
+.bodCard p{
+    margin: 0px;
 }
 
 .cardTitle{
@@ -45,3 +49,4 @@
 
 
 
+ 

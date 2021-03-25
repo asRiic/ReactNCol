@@ -1,9 +1,26 @@
+.cont{
+    display: flex;
+}
+
 .gCard{
     width: 243px;
     height: 437px;
+    margin: 4px;
 }
 
 .gCard img{
-    height: 250px ;
+    height: 200px ;
     width: 100%;
+}
+
+.cardBody{
+    padding: 7px;
+}
+
+.cardText{
+    margin:0;
+}
+
+.cardText h4{
+    margin-bottom: 3px;
 }
