@@ -11,8 +11,8 @@ import CardCarousel from '../components/CardCarousel'
 
 function Dashboard() {
   return (
-    <div className="layout">
-      <header>
+    <>
+      <header> 
         <Navbar />
       </header>
       <div className="content">
@@ -117,7 +117,7 @@ function Dashboard() {
           </footer>
         </div>
       </div>
-    </div>
+    </>
   );
 }
 

@@ -1,7 +1,7 @@
 
 .barnav{
-    width: 1864px;
-    height: auto;
+    width: auto;
+    max-height: 253px;
     background-color: #F0F0F0;
     text-align: center;
     text-decoration: none;
@@ -10,7 +10,7 @@
 .divLogo div{
     padding: 0px;
 }
-
+ 
 .divLogo{
     text-align: center ;
     width: auto;

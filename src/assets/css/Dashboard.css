@@ -1,11 +1,21 @@
-.headerNav{
-  height: 64px;
-  width: auto;
-  background-color: #177ddc !important;
+*{
+  margin: 0px;
   padding: 0px;
 }
 
-.sider{
-  width: 250px;
+.layout{
+  width: auto;
+}
+.navBar{
+  background-color:lightseagreen ;
   
+  max-width: 1839px;
+}
+
+.sideBar{
+  background-color: lightskyblue;
+}
+
+.ctrlPage{
+  background-color: mediumpurple;
 }
