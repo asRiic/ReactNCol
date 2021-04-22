@@ -1,57 +1,64 @@
-.layout{
-   
-}
-.row{
-    margin: 0px;
+body{
+    background: #e9ecf4;
+    color: #000;
 }
 
-.colIzPubli{
-    background-color: yellow;
+.contenedor {
+    width: 100%;
+    max-width: 1600px;
+    margin: 0px auto;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(7, auto);
+    grid-template-areas: "header header header header header"
+                         "sidebar-left main main main sidebar-right"
+                         "sidebar-left main main main sidebar-right"
+                         "sidebar-left main main main sidebar-right"
+                         "sidebar-left main main main sidebar-right"
+                         "sidebar-left main main main sidebar-right"
+                         "footer footer footer footer footer";
 }
 
-.colCont{
-    background-color: #444;
+.header{
+    grid-area: header;
+    justify-content: center;
+    display: flex;
 }
 
-.colNews{
-    background-color: red;
+.sidebar-left{
+    grid-area: sidebar-left;
+    justify-content: center;
+    display: flex;
 }
 
-.colCarousel{
-    
-    margin-top: 5px;
-    padding-top: 3px;
-    
+.sidebar-right{
+    grid-area: sidebar-right;
+    justify-content: center;
+    display: flex;
 }
 
-.ContCarousel{
-    background-color: rgb(113, 63, 136); /*Esto toca quitarlo*/
-    padding: 0px;
-    height: 460px;
+.main{
+    grid-area: main;
+    justify-content: center;
+    display: flex;
 }
 
-.CardCarousel{
-    background-color: lightcoral;
-    padding: 0px;
-    height: 460px;
-    width: 720px;
+.footer{
+    grid-area: footer;
+    justify-content: center;
+    display: flex;
 }
 
-.colHeader{
-    border-top-style: solid ;
-    border-width: 1.5px;
-    border-top-width: 1.5px;
-    margin-top: 10px;
-    width: auto;
-    height: 50px;
-}
-
-.moreNews a p{
-    margin-bottom: 0px;
-    margin-top: 16px;
-}
-
-.colCardNews{
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
+@media only screen and (max-width: 978px) {
+    .contenedor{
+      grid-template-columns: repeat(1, 1fr);
+      grid-template-rows: repeat(1, auto);
+      grid-template-areas: 
+        "header"
+        "main"
+        "sidebar-left"
+        "sidebar-right"
+        "footer";
+    }
+  }

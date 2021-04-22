@@ -9,32 +9,32 @@
 }
 
 .contCard{
-    width: 498px;
+    width: auto;
     height: 146px;
     margin: 0px;
 }
 
 .contImg{
     height: 146px;
-    width: 190px;
+    width: 35%;
     padding: 0px;
 }
 
 .cardImg{
     height: 146px;
-    width: 190px;
+    width: 100%;
 }
 
 .contBody{
     padding: 0px;
     height: 146px;
-    width: 308px;
+    width: 65%;
     padding: 3px 5px 3px 5px;
 }
 
 .bodCard{
     height: 114px;
-    width: 298px;
+    width: 100%;
 }
 
 .bodCard p{

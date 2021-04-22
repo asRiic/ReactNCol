@@ -1,124 +1,46 @@
-import React from 'react';
+import {useState} from 'react';
 import { Link } from 'react-router-dom';
-import 'bootstrap/dist/css/bootstrap.min.css'
 import '../assets/css/Index.css';
+import '../assets/css/normalize.css';
+
 
 /* Componentes */
 import Navbar from '../components/Navbar';
 import NewsBar from '../components/NewsBar';
 import Carousel from '../components/Carousel';
-import CardCarousel from '../components/CardCarousel'
+import CardCarousel from '../components/CardCarousel';
+import Picture from '../components/Picture';
 
-function Dashboard() {
+function Index() {
+  const[sidebarOpen, setSidebarOpen] = useState(false);
+
+  const openSidebar = () => {
+    setSidebarOpen(true);
+  };
+
+  const closeSidebar = () => {
+     setSidebarOpen(false);
+  };
+
   return (
-    <>
-      <header> 
-        <Navbar />
+    <div className="contenedor">
+      <header className="header">
+        <Navbar sidebarOpen={sidebarOpen} openSidebar={openSidebar} />
       </header>
-      <div className="content">
-
-        <div className="row">
-
-          <div className="col colIzPubli col-lg-2">
-            publicidad
-          </div>
-
-          <div className="col col-lg-8 colCont">
-            <div className="row align-items-center colCarousel">
-              <div className="col col-lg-7 ContCarousel" >
-                <Carousel />
-              </div >
-              <div className="col col-lg-5 CardCarousel">
-                <CardCarousel />
-              </div>
-            </div>
-
-            <div className="row">
-              <div className="col-lg-12 colHeader">
-                <div className="row" >
-                  <div className="colTittle col-lg-9">
-                    <h1>Entrevistas</h1>
-                  </div>
-                  <div className="moreNews col-lg-3">
-                    <Link to="/">
-                      <p>Ver mas entrevistas...</p>
-                    </Link>
-                  </div>
-                </div>
-              </div>
-              <div className="colCardNews col-lg-12">
-                <NewsBar />
-              </div>
-            </div>
-
-            <div className="row">
-              <div className="col-lg-12 colHeader">
-                <div className="row" >
-                  <div className="colTittle col-lg-9">
-                    <h1>Cronicas</h1>
-                  </div>
-                  <div className="moreNews col-lg-3">
-                    <Link to="/">
-                      <p>Ver mas cronicas...</p>
-                    </Link>
-                  </div>
-                </div>
-              </div>
-              <div className="colCardNews col-lg-12">
-                <NewsBar />
-              </div>
-            </div>
-
-            <div className="row">
-              <div className="col-lg-12 colHeader">
-                <div className="row" >
-                  <div className="colTittle col-lg-9">
-                    <h1>Emisora</h1>
-                    <small>Escucha las entrevisatas mas interesante (Esto toca arreglarlo)</small> 
-                  </div>
-                  <div className="moreNews col-lg-3">
-                    <Link to="/">
-                      <p>Ver mas entrevistas...</p>
-                    </Link>
-                  </div>
-                </div>
-              </div>
-              <div className="colCardNews col-lg-12">
-                <NewsBar />
-              </div>
-            </div>
-           
-            <div className="row">
-              <div className="col-lg-12 colHeader">
-                <div className="row" >
-                  <div className="colTittle col-lg-9">
-                    <h1>Entrevistas</h1>
-                  </div>
-                  <div className="moreNews col-lg-3">
-                    <Link to="/">
-                      <p>Ver mas entrevistas...</p>
-                    </Link>
-                  </div>
-                </div>
-              </div>
-              <div className="colCardNews col-lg-12">
-                <NewsBar />
-              </div>
-            </div>
-
-          </div>
-
-          <div className="col colNews col-lg-2">
-            Publicidad y noticias
-          </div>
-
-          <footer>
-            <h1>Footer</h1>
-          </footer>
-        </div>
-      </div>
-    </>
+      <aside className="sidebar-left">
+        <h2>Publicidad</h2>
+      </aside>
+      <main className="main">
+        <h3>Holi 3</h3>
+      </main>
+      <aside className="sidebar-right">
+        <h4>Holi 4</h4>
+      </aside >
+      <footer className="footer">
+        <h5>Holi 5</h5>
+      </footer>
+    </div>
   );
 }
 
-export default Dashboard;
+export default Index;

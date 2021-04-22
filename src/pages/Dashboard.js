@@ -1,25 +1,26 @@
-import React from 'react';
+import {useState} from 'react';
 import '../assets/css/Dashboard.css';
 
-import Navbar from '../components/Navbar';
-import MenuSider from '../components/MenuSider';
+import _Navbar from '../components/Dsh_navbar';
+import _Sidebar from '../components/Dsh_sidebar';
+import _Main from  '../components/Dsh_main';
 
 function Dashboard() {
+  const[sidebarOpen, setSidebarOpen] = useState(false);
+
+  const openSidebar = () => {
+    setSidebarOpen(true);
+  };
+
+  const closeSidebar = () => {
+     setSidebarOpen(false);
+  };
+  
   return (
-    <div>
-      <div className="row">
-        <div className="col navBar">
-          <Navbar />
-        </div>
-      </div>
-      <div className="row">
-        <div className="col-2 sideBar">
-          <MenuSider />
-        </div>
-        <div className="col-10 ctrlPage">
-          <h1>Hola prra</h1>
-        </div>
-      </div>
+    <div className="containner">
+        <_Navbar sidebarOpen={sidebarOpen} openSidebar={openSidebar}/>
+        <_Main />
+        <_Sidebar sidebarOpen={sidebarOpen} closeSidebar={closeSidebar}/>
     </div>
   );
 }

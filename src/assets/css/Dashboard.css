@@ -1,21 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;1,300&display=swap");
+
+
+::-webkit-scrollbar {
+  width: 5px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px #a5aaad;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #3ea175;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background:#a5aaad;
+}
+
+
+
+
+/* General styling */
+
 *{
   margin: 0px;
   padding: 0px;
 }
 
-.layout{
-  width: auto;
+body{
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
 }
-.navBar{
-  background-color:lightseagreen ;
+
+.text-primary-p {
+  color: #a5aaad;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+.text-tittle {
+   color: #2e4a66;
+}
+
+.text-lightblue {
+  color: #469cac;
+}
+
+.text-red{
+  color: #cc3d38;
+}
+
+.text-yellow {
+  color: #a98921;
+}
+
+.text.green {
+   color: #3b9668;
+}
+
+.containner{
+  display: grid;
+  max-width: 1920;
   
-  max-width: 1839px;
+  
+  grid-template-columns: repeat(4, 1fr) ;
+  grid-template-rows: repeat(2, auto);
+  grid-template-areas: 
+  "sidebar nav nav nav"
+  "sidebar main main main";
+ 
 }
 
-.sideBar{
-  background-color: lightskyblue;
-}
-
-.ctrlPage{
-  background-color: mediumpurple;
+@media only screen and (max-width: 978px) {
+  .containner{
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(1, auto);
+    grid-template-areas: 
+      "nav"
+      "main";
+  }
 }

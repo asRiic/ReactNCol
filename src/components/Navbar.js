@@ -1,65 +1,60 @@
-import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
 import '../assets/css/Navbar.css';
 import logo from '../assets/img/nCol_logo.png';
-import 'bootstrap/dist/css/bootstrap.min.css'
+import '../assets/css/normalize.css'
 
 
-export default class Navbar extends Component {
-    render() {
-        return (
-            <div className="barnav">
-                <div className="row row-cols-1 divLogo">
-                    <div className="col imgNav ">
-                        <Link to="/">
-                            <img className="logImg" src={logo} alt="Noticias Colombia" loading="lazy" />
-                        </Link>
-                    </div>
-                    <div className="col liTitulo ">
-                        <Link to="/">
-                            <h1>Noticias Colombia</h1>
-                        </Link>
-                    </div>
-                </div>
-
-                <div className="row rowNav">
-                    <div className="col divNav">
-                        <ul className="ulNav">
-                            <li>
-                                <Link>
-                                    <spam>Entrevista</spam>
-                                </Link>
-                            </li>
-
-                            <li>
-                                <Link>
-                                    <spam>Emisora</spam>
-                                </Link>
-                            </li>
-                            <li>
-                                <Link>
-                                    <spam>Videos</spam>
-                                </Link>
-                            </li>
-                            <li>
-                                <Link>
-                                    <spam>Comercio Exterior</spam>
-                                </Link>
-                            </li>
-                            <li>
-                                <Link>
-                                    <spam>Cronicas</spam>
-                                </Link>
-                            </li>
-                            <li>
-                                <Link>
-                                    <spam>¿Quienes somos?</spam>
-                                </Link>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
+function Navbar({ sidebarOpen, openSidebar }) {
+    return (
+        <div className="nav-bar">
+            <div className="nav_icon" onClick={() => openSidebar()}>
+                <i className="fa fa-bars"></i>
             </div>
-        )
-    }
+
+            <div className="divLogo">
+                <a href="#">
+                    <img className="logImg" src={logo} alt="Noticias Colombia" loading="lazy" />
+                    <h1>Noticias Colombia</h1>
+                </a>
+            </div>
+
+            <div className="divNav">
+                <ul className="ulNav">
+                    <li>
+                        <a href="#">
+                            <spam>Entrevista</spam>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            <spam>Emisora</spam>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <spam>Videos</spam>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <spam>Comercio Exterior</spam>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <spam>Cronicas</spam>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <spam>¿Quienes somos?</spam>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    )
 }
+
+export default Navbar;

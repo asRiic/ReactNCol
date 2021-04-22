@@ -1,80 +1,78 @@
 
-.barnav{
-    width: auto;
-    max-height: 253px;
+.nav-bar{
+    width: 100%;
     background-color: #F0F0F0;
-    text-align: center;
-    text-decoration: none;
+    display: block
 }
 
-.divLogo div{
-    padding: 0px;
+
+.divLogo {
+    text-align: center;
+    display: flex;
+    justify-content: center;
 }
- 
-.divLogo{
-    text-align: center ;
-    width: auto;
+
+.divLogo a h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 50px;
 }
 
 .logImg{
-    width: 135px;
-    height: 135px;
-    border-radius: 50%;
-}
-
-.liTitulo{
-    padding: 0px;
-}
-
-.liTitulo a h1{
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 50px;
-    text-align: center;
-}
-
-.imgNav{
-    height: 135px;
-    width: auto;
-    padding: 0px;
-}
-
-.rowNav{
-    width: auto;   
-}
-
-.divNav{
-    /*background-color: #2990e6;*/
-    background-color: #47545e;
-    height: 50px;
-}
-
-.ulNav{
-    margin-bottom: 0px;
-    margin-top: 0px;
-    list-style: none;
-    font-size: 26px;
-}
-
-.ulNav li{
-    display: inline;
-    padding-inline: 15px;
-    padding-bottom: 15px;
-    padding-top: 2px;
-
-}
-
-.ulNav li a{
-    color: lavender;
-    font-size: 20px;
+    width: 150px;
+    height: 150px;
+    padding: 6px;
     
 }
 
-.ulNav li:hover{
+.divNav{
+    background-color: #2990e6;
+    height: 50px;
+    justify-content: center;
+    display: flex;
+}
+
+.ulNav{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+.ulNav li {
+    padding-left: 8px;
+    padding-right: 8px;
+    height: 100%;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+.ulNav li  a  {
+    height: 100%;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+.ulNav li  a spam {
+    font-size: 19px;
+    color: #000;
+    font-weight: 500;
+}
+
+.ulNav li :hover{
+    
+    text-decoration: none;
     background-color: #217FCD;
-    text-decoration: underline;
 }
 
 
+/*     Movile Menu    */
 
-/*Movile Menu*/
-
+@media only screen and (max-width: 978px){
+    .nav_icon{
+        display: inline;
+    }
+}

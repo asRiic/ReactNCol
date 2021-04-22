@@ -53,7 +53,7 @@ const CardCarousel = (props) => {
                     </div>
                     <div className="col contBody" >
                         <div className="bodCard">
-                            <h4 className="cardTitle">{item.tittle}</h4>
+                            <h5 className="cardTitle">{item.tittle}</h5>
                             <p className="cardInf"><small className="text-muted">{item.time}</small></p>
                         </div>
                     </div>

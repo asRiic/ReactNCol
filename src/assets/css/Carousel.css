@@ -1,17 +1,17 @@
 .ImgCarousel{
     height: 460px;
-    width: 707px;
+    width: 100%;
 }
 
 .Carousel{
     height: 460px;
-    width: 707px;
+    width: auto;
     padding: 0px; 
 
 }
 
 .infCarousel{
-    width: 707px;
+    width: auto;
     left: 0px;
     right: 0px;
     background: #6c757dad;
