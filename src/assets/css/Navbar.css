@@ -2,7 +2,7 @@
 .nav-bar{
     width: 100%;
     background-color: #F0F0F0;
-    display: block
+    display: block;
 }
 
 
@@ -15,11 +15,12 @@
 .divLogo a h1 {
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 50px;
+    margin: 0px 0px 7px 0px;
 }
 
 .logImg{
-    width: 150px;
-    height: 150px;
+    width: 160px;
+    height: 160px;
     padding: 6px;
     
 }
@@ -54,6 +55,7 @@
     justify-content: center;
     display: flex;
     align-items: center;
+    text-decoration: none;
 }
 
 .ulNav li  a spam {

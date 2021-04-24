@@ -1,15 +1,11 @@
 import {useState} from 'react';
-import { Link } from 'react-router-dom';
 import '../assets/css/Index.css';
 import '../assets/css/normalize.css';
 
 
 /* Componentes */
 import Navbar from '../components/Navbar';
-import NewsBar from '../components/NewsBar';
-import Carousel from '../components/Carousel';
-import CardCarousel from '../components/CardCarousel';
-import Picture from '../components/Picture';
+import Main from '../components/main/Main_index';
 
 function Index() {
   const[sidebarOpen, setSidebarOpen] = useState(false);
@@ -31,13 +27,13 @@ function Index() {
         <h2>Publicidad</h2>
       </aside>
       <main className="main">
-        <h3>Holi 3</h3>
+        <Main />
       </main>
       <aside className="sidebar-right">
-        <h4>Holi 4</h4>
+        <h4>Publicidad</h4>
       </aside >
       <footer className="footer">
-        <h5>Holi 5</h5>
+        <h5>Contactanos...</h5>
       </footer>
     </div>
   );

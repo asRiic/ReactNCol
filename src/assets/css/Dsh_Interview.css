@@ -1,0 +1,11 @@
+.cont_intview{
+    display: grid;
+    max-width: 1920;
+    grid-gap: 10px;
+    grid-template-columns: repeat(5, 1fr) ;
+    grid-template-rows: repeat(2, auto);
+    grid-template-areas: 
+                        "sidebar nav nav nav nav"
+                        "sidebar main main main main";
+                        
+}

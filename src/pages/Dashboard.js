@@ -1,9 +1,9 @@
 import {useState} from 'react';
 import '../assets/css/Dashboard.css';
 
-import _Navbar from '../components/Dsh_navbar';
-import _Sidebar from '../components/Dsh_sidebar';
-import _Main from  '../components/Dsh_main';
+import Dsh_Navbar from '../components/Dsh_navbar';
+import Dsh_Sidebar from '../components/Dsh_sidebar';
+import Dsh_Main from  '../components/main/Dsh_main';
 
 function Dashboard() {
   const[sidebarOpen, setSidebarOpen] = useState(false);
@@ -18,9 +18,9 @@ function Dashboard() {
   
   return (
     <div className="containner">
-        <_Navbar sidebarOpen={sidebarOpen} openSidebar={openSidebar}/>
-        <_Main />
-        <_Sidebar sidebarOpen={sidebarOpen} closeSidebar={closeSidebar}/>
+        <Dsh_Navbar sidebarOpen={sidebarOpen} openSidebar={openSidebar}/>
+        <Dsh_Main />
+        <Dsh_Sidebar sidebarOpen={sidebarOpen} closeSidebar={closeSidebar}/>
     </div>
   );
 }

@@ -6,9 +6,7 @@ import '../assets/css/normalize.css'
 function Navbar({ sidebarOpen, openSidebar }) {
     return (
         <div className="nav-bar">
-            <div className="nav_icon" onClick={() => openSidebar()}>
-                <i className="fa fa-bars"></i>
-            </div>
+            
 
             <div className="divLogo">
                 <a href="#">
@@ -18,6 +16,9 @@ function Navbar({ sidebarOpen, openSidebar }) {
             </div>
 
             <div className="divNav">
+            <div className="nav_icon" onClick={() => openSidebar()}>
+                <i className="fa fa-bars"></i>
+            </div>
                 <ul className="ulNav">
                     <li>
                         <a href="#">

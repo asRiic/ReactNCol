@@ -1,0 +1,79 @@
+.contenedor_main {
+    width: 100%;
+    margin: 5px ;
+    display: grid;
+    grid-gap: 7px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(6, auto);
+    grid-template-areas: "carousel rec_new"
+                         "int_view int_view"
+                         "media media"
+                         "cron cron"
+                         "station station"
+                         "fro_trade fro_trade"
+                         ;
+}
+
+.carousel{
+grid-area: carousel;
+justify-content: center;
+display: flex;
+background-color: lightcoral;
+}
+
+.rec_new{
+grid-area: rec_new;
+justify-content: center;
+display: flex;
+background-color: lightcyan;
+}
+
+.int_view{
+grid-area: int_view;
+justify-content: center;
+display: flex;
+background-color: lightgrey;
+}
+
+.media{
+grid-area: media;
+justify-content: center;
+display: flex;
+background-color: lightseagreen;
+}
+
+.cron{
+grid-area: cron;
+justify-content: center;
+display: flex;
+background-color: maroon;
+}
+
+.station{
+grid-area: station;
+justify-content: center;
+display: flex;
+background-color: lightskyblue;
+}
+
+.fro_trade{
+grid-area: fro_trade;
+justify-content: center;
+display: flex;
+background-color: aqua;    
+}
+
+@media only screen and (max-width: 978px) {
+    .contenedor_main{
+      grid-template-columns: repeat(1, 1fr);
+      grid-template-rows: repeat(6, auto);
+    grid-template-areas: "carousel"
+                         "rec_new"
+                         "int_view"
+                         "media"
+                         "cron"
+                         "station"
+                         "fro_trade"
+                         ;
+    }
+  }

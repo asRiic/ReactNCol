@@ -7,12 +7,9 @@ const Sidebar = ({ sidebarOpen, closeSidebar }) => {
         <div className={sidebarOpen ? "sidebar_responsive" : ""} id="sidebar">
             <div className="sidebar__tittle">
                 <div className="sidebar__img">
-                    
                         <img src={logo} alt="Logo" />
                         <h1 onClick={() => closeSidebar()}>Noticias colombia</h1>
-                    
                 </div>
-                
             </div>
 
             <div className="sidebar__menu">
@@ -40,7 +37,7 @@ const Sidebar = ({ sidebarOpen, closeSidebar }) => {
                 </div>
                 <div className="sidebar__link">
 
-                    <a href="#">Entrevista</a>
+                    <a href="/Dashboard/Interview">Entrevista</a>
                 </div>
                 <div className="sidebar__link">
 

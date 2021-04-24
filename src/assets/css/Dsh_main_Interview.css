@@ -1,0 +1,138 @@
+.main{
+    grid-area: main;
+    overflow-y: auto;
+}
+
+.cont_main_intview{
+    width: 100%;
+    margin: 5px ;
+    display: grid;
+    grid-gap: 7px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas: "top_left top_center top_right"
+                         "bot_left bot_center bot_right"
+                         "input_opt input_opt input_opt" 
+                         "table_list table_list table_list"
+                         ;
+}
+
+.top_left{
+    grid-area: top_left;
+    justify-content: center;
+    display: flex;
+    background-color: aquamarine;
+    height: 150px;
+}
+
+.top_center{
+    grid-area: top_center;
+    justify-content: center;
+    display: flex;
+    background-color: cadetblue;
+    height: 150px;
+}
+
+.top_right{
+    grid-area: top_right;
+    justify-content: center;
+    display: flex;
+    background-color: cornflowerblue;
+    height: 150px;
+}
+
+.bot_left{
+    grid-area: bot_left;
+    justify-content: center;
+    display: flex;
+    background-color: aquamarine;
+    height: 150px;
+}
+
+.bot_center{
+    grid-area: bot_center;
+    justify-content: center;
+    display: flex;
+    background-color: cadetblue;
+    height: 150px;
+}
+
+.bot_right{
+    grid-area: bot_right;
+    justify-content: center;
+    display: flex;
+    background-color: cornflowerblue;
+    height: 150px;
+}
+
+.input_opt {
+    grid-area: input_opt;
+    display: flex;
+    justify-content: center;    
+}
+
+.btn_NewRegister {
+    background:rgb(31, 166, 122);
+    border-color: rgb(0, 117, 0);
+    border-style: solid;
+    color: honeydew;
+}
+
+.btn_delete {
+    height: 30px;
+    width: 30px;
+    background:crimson;
+    border-color: rgb(165, 16, 46);
+    border-style: solid;
+    color: honeydew;
+}
+
+.btn_edit {
+    height: 30px;
+    width: 30px;
+    background:goldenrod;
+    border-color: rgb(170, 129, 25);
+    border-style: solid;
+    color: honeydew;
+}
+
+.inp_search {
+    width: 250px;
+}
+
+.btn_NewRegister {
+    background:rgb(31, 166, 122);
+    border-color: rgb(0, 117, 0);
+    border-style: solid;
+    color: honeydew;
+}
+
+.input_opt button i {
+  padding: 0px 3px 0px 3px;  
+}
+
+.table_list{
+    display: flex;
+    grid-area: table_list;
+    justify-content: center;
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    padding: 1  5px 0px 15px 0px;
+}
+
+.table_list table{
+    border-style: solid;
+    width: 70%;
+    
+}
+
+.table_list table td, th {
+    border: 1px solid #dddddd;
+    text-align: center;
+    padding: 7px;
+}
+
+.table_list table tr:nth-child(even) {
+    background-color: #dddddd;
+  }

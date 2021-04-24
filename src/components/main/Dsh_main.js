@@ -1,6 +1,6 @@
-import '../assets/css/Dsh_main.css';
-import Chart from './Chart';
-import imgg from '../assets/img/Avatar.png';
+import '../../assets/css/Dsh_main.css';
+import Chart from '../Chart';
+import imgg from '../../assets/img/Avatar.png';
 
 const Main = () => {
     return (

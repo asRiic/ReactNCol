@@ -68,13 +68,11 @@ body{
 .containner{
   display: grid;
   max-width: 1920;
-  
-  
   grid-template-columns: repeat(4, 1fr) ;
   grid-template-rows: repeat(2, auto);
   grid-template-areas: 
-  "sidebar nav nav nav"
-  "sidebar main main main";
+                      "sidebar nav nav nav"
+                      "sidebar main main main";
  
 }
 
