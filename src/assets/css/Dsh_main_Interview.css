@@ -85,6 +85,7 @@
     border-color: rgb(165, 16, 46);
     border-style: solid;
     color: honeydew;
+    margin: 0px 5px 0px 5px;
 }
 
 .btn_edit {
@@ -94,6 +95,15 @@
     border-color: rgb(170, 129, 25);
     border-style: solid;
     color: honeydew;
+    margin: 0px 5px 0px 5px;
+}
+
+.btn_search{
+    background: dodgerblue;
+    border-color: rgb(18, 87, 156);
+    border-style: solid;
+    color: honeydew;
+    padding: 0px 5px 0px 2px;
 }
 
 .inp_search {
@@ -101,10 +111,12 @@
 }
 
 .btn_NewRegister {
+    margin: 0px 5px 0px 15px;
     background:rgb(31, 166, 122);
     border-color: rgb(0, 117, 0);
     border-style: solid;
     color: honeydew;
+    padding: 0px 3px 0px 3px;
 }
 
 .input_opt button i {
@@ -118,7 +130,7 @@
     font-family: arial, sans-serif;
     border-collapse: collapse;
     width: 100%;
-    padding: 1  5px 0px 15px 0px;
+    padding: 10px 0px 20px 0px;
 }
 
 .table_list table{

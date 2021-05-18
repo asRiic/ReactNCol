@@ -1,9 +1,19 @@
+import React, {useState} from 'react';
 import '../../assets/css/Dsh_main_Interview.css';
 import '../../assets/css/normalize.css';
 
+import Modal from '../modal/Modal';
+
 function Dsh_main_Interview() {
+    const [showModal, setShowModal] = useState(false);
+
+    const openModal = () =>{
+        setShowModal(prev => !prev);
+    }
+
     return (
         <main className="main">
+            <Modal showModal={showModal} setShowModal={setShowModal}/>
             <div className="cont_main_intview">
 
                 <aside className="top_left">
@@ -26,6 +36,7 @@ function Dsh_main_Interview() {
 
                 <aside className="bot_right">
                     Holi pton
+                    
                 </aside>
 
 
@@ -33,9 +44,10 @@ function Dsh_main_Interview() {
                     <input type="text" className="inp_search" placeholder="Buscar por codigo o titulo."/>
                     <button type="button" className="btn_search"> <i class="fa fa-search" />Buscar</button>
 
-                    <button type="button" className="btn_NewRegister"> <i class="fa fa-plus" />Nuevo registro</button>
+                    <button type="button" className="btn_NewRegister" onClick={openModal}> <i class="fa fa-plus" />Nuevo registro</button>
+                    
                 </div>
-
+                    
                 <div className="table_list">
                     <table>
                         <tr>
